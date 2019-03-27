@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="Resource-type" content="document">
+	<!-- <link rel="canonical" href=""> -->
+	<!-- <meta name="Robots" content="all"> -->
+	<!-- <meta name="Rating" content="general"> -->
+	<!-- <meta name="author" content=""> -->
+	<!-- <meta name="keywords" content=""> -->
+
+    <title>Wide</title>
+
+	<!-- Compatibility -->
+	<!--[if IE]><script src"http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<!-- Favicon -->
+	<link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+	<!-- PWA -->
+	<link rel="manifest" href="manifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Wide">
+	<meta name="msapplication-TileImage" content="assets/img/icon.png">
+	<meta name="msapplication-TileColor" content="#333333">
+	<meta name="theme-color" content="#333333">
+
+	<!-- Icons -->
+	<link rel="icon" type="image/png" href="assets/img/icon.png">
+	<link rel="apple-touch-icon" type="image/png" href="assets/img/icon.png">
+
+	<!-- Social -->
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="website">
+
+	<!-- CSS -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  </head>
+  <body>
+
+  	<header>
+	  	<img src="assets/img/logo.png" height="3em">
+	    <h1>Bem vindos ao Wide</h1>
+	    <br>
+		<input type="text" placeholder="Busca" id="search" class="search">
+	</header>
+
+	<!-- Onde carrega o conteúdo -->
+	<section id="content"></section>
+
+	<!-- Template usado pelo JavaScript -->
+	<template id="templatePost">
+	    <article class="post">
+	        <a href="" class="urlPost">
+	          <div class="contentPost">
+	            <h3 class="titlePost"></h3>
+	            <p class="descriPost"></p>
+	          </div>
+	        </a>
+	    </article>
+	</template>
+
+    <!-- JavaScript -->
+    <script src="database.js"></script>
+    <script src="assets/js/wide.js"></script>
+  </body>
+</html>
