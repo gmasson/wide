@@ -1,7 +1,7 @@
 // Onde é inserido
 var content = document.getElementById("content");
 
-// Modelo da estrutura do post
+// Estrutura do post
 var tmplItem = document.getElementById("templatePost");
 
 // Campo de busca
@@ -15,15 +15,12 @@ function showItems(search) {
     || item.titulo.toLowerCase().includes(search)
   );
 
-  // Populando conteudo.
   filteredData.forEach(function (dataItem, indice) {
     // Clonando conteudo do template.
-    var item = document.importNode(tmplItem.content, true);
+    var item = document.importNode(templatePost.content, true);
 
     // Atualizando o novo item com os valores do dataItem atual.
-    item.querySelector(".urlPost").setAttribute("href", dataItem.url_post);
-    item.querySelector(".imgPost").setAttribute("src", dataItem.url_img);
-    item.querySelector(".imgPost").setAttribute("alt", dataItem.alt_img);
+    item.querySelector(".urlPost").setAttribute("href", dataItem.url);
     item.querySelector(".titlePost").textContent = dataItem.titulo;
     item.querySelector(".descriPost").textContent = dataItem.descricao;
     content.appendChild(item);

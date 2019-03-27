@@ -1,0 +1,18 @@
+header {
+	padding: 3em 0;
+}
+header img {
+	height: 4em;
+}
+article.post {
+	padding: .5em;
+	margin: .7em 0;
+	border: 1px solid #ccc;
+}
+article.post a {
+	color: #888;
+	text-decoration: none;
+}
+article.post a:hover {
+	color: #000;
+}
