@@ -1,2 +1,2 @@
 # Wide
-Sistema de busca em JS open source
+Projeto open source desenvolvido para criação de sistemas de busca

@@ -1,16 +1,20 @@
 var database = [
   {
     "id": 1,
-    "titulo": "Title 1",
-    "url": "#",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "data": "21-12-2018"
+    //"img": "path/img.format",
+    //"img_alt": "Alt img",
+    "title": "Title 1",
+    "descri": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link_url": "#",
+    "link_name": "Link"
   },
   {
     "id": 2,
-    "titulo": "Title 2",
-    "url": "#",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "data": "22-12-2018"
+    //"img": "path/img.format",
+    //"img_alt": "Alt img",
+    "title": "Title 2",
+    "descri": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "link_url": "#",
+    "link_name": "Link"
   }
 ];

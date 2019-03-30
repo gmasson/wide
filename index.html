@@ -26,8 +26,8 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-title" content="Wide">
 	<meta name="msapplication-TileImage" content="assets/img/icon.png">
-	<meta name="msapplication-TileColor" content="#333333">
-	<meta name="theme-color" content="#333333">
+	<meta name="msapplication-TileColor" content="#6666ff">
+	<meta name="theme-color" content="#6666ff">
 
 	<!-- Icons -->
 	<link rel="icon" type="image/png" href="assets/img/icon.png">
@@ -46,25 +46,32 @@
 
   	<header class="container text-center">
 	  	<img src="assets/img/logo.png" alt="Logo Wide">
-	    <h1>Bem vindos ao Wide</h1>
-	    <br>
-		<input type="text" placeholder="Busca" id="search" class="text-center form-control">
+	  	<p>Projeto open source desenvolvido para criação de sistemas de busca</p>
+		<input type="text" placeholder="Faça sua pesquisa" id="search" class="text-center form-control">
 	</header>
 
 	<!-- Onde carrega o conteúdo -->
-	<section class="container" id="content"></section>
+	<section class="container">
+		<div class="row" id="content"></div>
+	</section>
 
 	<!-- Template usado pelo JavaScript -->
 	<template id="templatePost">
-	    <article class="post">
-	        <a href="" class="urlPost" target="_blank">
-	          <div class="contentPost">
-	            <h3 class="titlePost"></h3>
-	            <p class="descriPost"></p>
-	          </div>
-	        </a>
-	    </article>
+		<div class="col-4">
+			<article class="post card">
+				<!--<img class="card-img-top imgPost" src="" alt="">-->
+				<div class="card-body contentPost">
+					<h5 class="card-title titlePost"></h5>
+					<p class="card-text descriPost"></p>
+					<a href="" class="btn btn-primary linkPost" target="_blank"></a>
+				</div>
+			</article>
+		</div>
 	</template>
+
+	<footer>
+		Wide 1.0 - 2019 | <a href="https://github.com/gmasson/wide" target="_blank">Colabore no Github</a>
+	</footer>
 
     <!-- JavaScript -->
     <script src="database.js"></script>
