@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+
+    <title>Wide Example</title>
+
+	<!-- Favicon -->
+	<link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+
+  	<header>
+		<div class="container">
+			<img src="img/logo.png" alt="Logo Wide">
+			<p>Projeto open source desenvolvido para criação de sistemas de busca</p>
+			<input type="text" placeholder="Faça sua pesquisa" id="search-input" class="text-center form-control" autofocus>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+
+			<!-- Onde carrega o conteúdo -->
+			<div class="row" id="results-area"></div>
+
+			<!-- Template usado pelo JavaScript -->
+			<template id="result-template">
+				<div class="col-sm-2 col-md-4">
+					<article class="card">
+						<!--<img class="card-img-top" id="resultImg" src="" alt="">-->
+						<div class="card-body" id="result-content">
+							<h5 class="card-title" id="result-title"></h5>
+							<p class="card-text" id="result-descr"></p>
+							<a href="" class="btn btn-primary" id="result-link" target="_blank"></a>
+						</div>
+					</article>
+				</div>
+			</template>
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			Projeto Wide - <a href="https://github.com/gmasson/wide" target="_blank">Colabore no Github</a>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../database.js"></script>
+	<script src="../wide.js"></script>
+</body>
+</html>

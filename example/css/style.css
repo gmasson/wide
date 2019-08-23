@@ -1,17 +1,27 @@
 header {
-	padding: 3em 0;
+	padding: 4em 0;
+	text-align: center;
 }
 header img {
-	height: 4em;
+	height: 5em;
 	margin-bottom: 3em;
 }
 header p {
 	color: #777;
 }
+
+section {
+	padding: 1em 0;
+}
+
 footer {
 	padding: 2em 0;
 	margin-top: 3em;
 	border-top: 1px solid #ddd;
 	text-align: center;
 	font-size: .8em;
+}
+
+.card {
+	margin-bottom: 1em;
 }
