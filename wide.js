@@ -66,8 +66,9 @@ function wShowItems(search = '') {
 	OBS: aqui você pode incluir mais critérios de busca
 	*/
 	const wFilteredData = database.filter(item =>
-		item.descri.toLowerCase().includes(search)
-		|| item.title.toLowerCase().includes(search)
+		item.title.toLowerCase().includes(search)
+		|| item.descr.toLowerCase().includes(search)
+		|| item.tags.toLowerCase().includes(search)
 	);
 
 	wFilteredData.forEach(function (dataItem) {
@@ -78,7 +79,7 @@ function wShowItems(search = '') {
 		//item.getElementById(wResultImg).setAttribute("href", dataItem.img);
 		//item.getElementById(wResultImg).setAttribute("alt", dataItem.img_alt);
 		item.getElementById(wResultTitle).textContent = dataItem.title;
-		item.getElementById(wResultDescr).textContent = dataItem.descri;
+		item.getElementById(wResultDescr).textContent = dataItem.descr;
 		item.getElementById(wResultLink).setAttribute("href", dataItem.link_url);
 		item.getElementById(wResultLink).textContent = dataItem.link_name;
 

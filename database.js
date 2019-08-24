@@ -4,7 +4,8 @@ var database = [
     //"img": "path/img.format",
     //"img_alt": "Alt img",
     "title": "Title 1",
-    "descri": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tags": "Lorem, ipsum",
     "link_url": "#",
     "link_name": "Link"
   },
@@ -13,7 +14,8 @@ var database = [
     //"img": "path/img.format",
     //"img_alt": "Alt img",
     "title": "Title 2",
-    "descri": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "descr": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "tags": "Lorem, ipsum",
     "link_url": "#",
     "link_name": "Link"
   },
@@ -22,7 +24,8 @@ var database = [
     //"img": "path/img.format",
     //"img_alt": "Alt img",
     "title": "Title 3",
-    "descri": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "descr": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "tags": "Lorem, ipsum",
     "link_url": "#",
     "link_name": "Link"
   },
@@ -31,7 +34,8 @@ var database = [
     //"img": "path/img.format",
     //"img_alt": "Alt img",
     "title": "Title 4",
-    "descri": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "descr": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "tags": "Lorem, ipsum",
     "link_url": "#",
     "link_name": "Link"
   }
