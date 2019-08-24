@@ -1,5 +1,5 @@
 /*
-* Wide 1.0
+* Wide 1.1
 * https://github.com/gmasson/wide/
 * License MIT
 */

@@ -1,5 +1,5 @@
 header {
-	padding: 4em 0;
+	padding: 7em 0 3em 0;
 	text-align: center;
 }
 header img {
@@ -8,6 +8,12 @@ header img {
 }
 header p {
 	color: #777;
+}
+header input {
+	max-width: 42em;
+	width: 80%;
+	min-width: 5em;
+	margin: 0 auto;
 }
 
 section {
