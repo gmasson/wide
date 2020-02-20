@@ -6,19 +6,19 @@
     <title>Wide Example</title>
 
 	<!-- Favicon -->
-	<link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+	<link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Style -->
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
   </head>
   <body>
 
   	<header>
 		<div class="container">
-			<img src="img/logo.png" alt="Logo Wide">
+			<img src="assets/img/logo.png" alt="Logo Wide">
 			<p>Projeto open source desenvolvido para criação de sistemas de busca</p>
 			<input type="text" placeholder="Faça sua pesquisa" id="search-input" class="text-center form-control" autofocus>
 		</div>
@@ -34,11 +34,11 @@
 			<template id="result-template">
 				<div class="col-sm-2 col-md-4">
 					<article class="card">
-						<!--<img class="card-img-top" id="resultImg" src="" alt="">-->
+						<!--<img class="card-img-top" id="resultImg" src="test.png" alt="...">-->
 						<div class="card-body" id="result-content">
 							<h5 class="card-title" id="result-title"></h5>
 							<p class="card-text" id="result-descr"></p>
-							<a href="" class="btn btn-primary" id="result-link" target="_blank"></a>
+							<a href="#" class="btn btn-primary" id="result-link" target="_blank"></a>
 						</div>
 					</article>
 				</div>
@@ -49,12 +49,15 @@
 
 	<footer>
 		<div class="container">
-			Projeto Wide - <a href="https://github.com/gmasson/wide" target="_blank">Colabore no Github</a>
+			Projeto Wide 1.2 - <a href="https://github.com/gmasson/widejs" target="_blank">Colabore no Github</a>
 		</div>
 	</footer>
 
 	<!-- Scripts -->
-	<script src="../../database.js"></script>
-	<script src="../../wide.js"></script>
+	<script src="assets/db/database.js"></script>
+	<script src="assets/js/wide.js"></script>
+	<script type="text/javascript">
+		wideStart('all');
+	</script>
 </body>
 </html>

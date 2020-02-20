@@ -1,5 +1,5 @@
 /*
-* Wide 1.1
+* Wide 1.2
 * https://github.com/gmasson/wide/
 * License MIT
 */
@@ -92,16 +92,23 @@ function wClearItems() {
 	wContent.innerHTML = '';
 }
 
-/* Busca itens quando o input for modificado */
-wSearchInput.addEventListener('input', function(e) {
-	const value = e.target.value.toLowerCase();
-	wClearItems();
-	wShowItems(value);
-	/* Oculta os resultados quando o campo estiver vazio */
-	if (value == '') {
-		wClearItems();
-		//wHidden('id');
-	} else {
-		//wShow('id');
+function wideStart(wShowAll = '') {
+	/* Com o parametro 'all', é exibido todos cadastros, mesmo que o campo esteja vazio */
+	/* Busca itens quando o input for modificado */
+	wSearchInput.addEventListener('input', function(e) {
+		const value = e.target.value.toLowerCase();
+		if (value == '') {
+			wClearItems();
+			if (wShowAll == 'all') {
+				wShowItems();
+			}
+		} else {
+			wClearItems();
+			wShowItems(value);
+		}
+	});
+
+	if (wShowAll == 'all') {
+		wShowItems();
 	}
-});
+}
